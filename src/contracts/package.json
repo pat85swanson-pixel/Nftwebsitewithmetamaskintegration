@@ -1,0 +1,24 @@
+{
+  "name": "luchador-lunch-hour-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for LUCHADOR LUNCH HOUR NFT collection",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.js",
+    "deploy:testnet": "npx hardhat run scripts/deploy.js --network sepolia",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.js --network mainnet",
+    "verify": "npx hardhat verify",
+    "test": "npx hardhat test",
+    "node": "npx hardhat node"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@openzeppelin/contracts": "^4.9.0",
+    "hardhat": "^2.17.0",
+    "ethers": "^5.7.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}
